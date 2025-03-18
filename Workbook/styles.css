@@ -1,0 +1,30 @@
+* { 
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   cursor: url("IMG/apple.png"), auto;
+}
+
+.background { 
+    width: 100vw;
+    height: 100vh;
+    background-color:#c2dcff;
+} 
+
+.duck { 
+    scale: 50%;
+}
+
+.duckTwo { 
+    scale: 50%;
+}
+
+.img { 
+    max-width: 80vw;
+    height: 50vh;
+    object-fit: contain;
+}
+
+.test { 
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+} 
