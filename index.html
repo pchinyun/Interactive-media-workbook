@@ -5,78 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CY's workbook</title>
-	<style>
-		* { 
-			padding: 0;
-			margin: 0;
-			box-sizing: border-box;
-		}
-		body {
-			width: 100vw;
-			height: 100vh;
-			overflow: hidden;
-			font-size: 12px;
-			line-height: 0.9rem;
-			text-align: center;
-		}
-
-		header { 
-			background-color: red;
-			color: white; 
-			height: 15vh;
-		}
-
-		h1 { 
-			font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-			line-height: 3rem;
-		}
-
-		.wrapper { 
-			padding: 1rem;
-			width: 100%;
-			display: flex;
-			flex-direction: row;
-			background-color: bisque;
-		}
-
-		#menuCol { 
-			padding: 1.5rem; 
-			/* margin: 25px; */
-			width: 50%; 
-			background-color: aqua;
-		}
-
-		#content { 
-			width: 50%;
-			/* margin: 10px; */
-			padding: 20px;
-			background-color: royalblue;
-		}
-
-		img { 
-			width: 100px;
-		}
-
-	</style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header><h1>CY's workbook</h1></header>
-	<div class="wrapper">
+        
+    <audio autoplay loop source src="/Audio/nature sounds.mp3"></audio>
+
+    </div>
+    <div class="landingPage">
+        <h1>you're in cy's workbook</h1>
+        <img class="forest" src="IMG/Trolberg forest.jpeg" alt="backgroundForest" width="100%">
+        <a href="/Week1/week1.html"><img class="duck" src="IMG/duck1.gif" alt=""></a>
+        <a href="/Week2/week2.html"><img class="hedgehog" src="IMG/week2Hedgehog.gif" alt=""></a>
+        <a href="/Week3/week3.html"><img class="kangaroo" src="IMG/kangaroo.gif" alt=""></a>
+    </div>
+   
 
 
-		<div id="menuCol">
-			<a href="./Week1/index.html"><button>Week 1</button></a>
-		</div>
 
-		<div id="content">
-			<h2>Week 1</h2>
-			<p>The eLearn modules take you through safety in the space, use of portable drills and hand tools that are freely 		 available in our general maker areas on the ground floor and basement levels. Approx.
 
-				The onsite face-to-face Telstra Creator Space team member to get familiar with the workspaces, amenities and the equipment available within the Telstra Creator Space. It also includes a hands-on training of portable drills and basic hand tools.
-			</p>
-			<img src="IMG/Screenshot 2025-03-11 at 2.43.51 PM.png" alt="fragile">
-		</div>
-
+    <script>
+        document.getElementById("enterButton").addEventListener("click", function() {
+            document.querySelector(".enterPage").classList.add("gone");
+            document.querySelector(".landingPage").classList.remove("blur")
+        });
+    </script>
+</body>
+</html>
 
 	</div>
 </body>

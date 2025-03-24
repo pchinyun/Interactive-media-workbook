@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In class workshop</title>
+</head>
+<style>
+
+    @font-face {
+        font-family:"Orange Squash" ;
+        src: url(/fonts/Orange-Squash-Demo-BF6483cfe8b2bfc.otf);
+        font-weight: 400;
+    }
+
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    body {
+    height: 100vh;
+    width: 100vw;
+    font-size: 12px;
+    line-height: 18px;
+    font-family: Orange Squash;
+    }
+
+    p {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    }
+
+    h1 {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    }
+
+    header {
+    height: 15vh;
+    background-color: #19085c7b;
+    color: rgb(255, 255, 255);
+    }
+
+    .wrapper {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(194, 220, 241);
+    }
+
+    #nav-tab {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    width: 30vw;
+    background-color: rgb(230, 203, 173);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    }
+
+    #content-wrapper {
+    padding: 10px;
+    width: 100%;
+    }
+
+    #content-wrapper > * {
+    min-height: 100vh;
+    }
+
+    img {
+    width: 50px;
+    }
+
+    @media screen and (max-width: 768px) {
+        .wrapper {
+        flex-direction: column;
+        }
+        #nav-tab {
+        width: 100%;
+        height: 80px;
+        flex-direction: row;
+        }
+    }
+</style>
+<body>
+    <header><h1>Interactive Media</h1></header>
+    <div class="wrapper">
+
+        <div id="nav-tab">
+        <a href="#week-one">Week 1</a>
+        <a href="#week-two">Week 2</a>
+        <a>Week 3</a>
+        </div>
+
+        <div id="content-wrapper">
+            <div id="week-one">
+                <h1>Gin</h1>
+                <p>Gin originated as a medicinal liquor made by monks and alchemists across Europe. The modern gin was modified in Flanders and the Netherlands to provide aqua vita from distillates of grapes and grains, becoming an object of commerce in the spirits industry. Gin became popular in England after the introduction of jenever, a Dutch and Belgian liquor</p>
+            </div>
+            <div id="week-two">
+                <h1>Gin</h1>
+                <p>Gin originated as a medicinal liquor made by monks and alchemists across Europe. The modern gin was modified in Flanders and the Netherlands to provide aqua vita from distillates of grapes and grains, becoming an object of commerce in the spirits industry. Gin became popular in England after the introduction of jenever, a Dutch and Belgian liquor</p>
+            </div>
+            <div id="week-three">
+                <h1>Gin</h1>
+                <p>Gin originated as a medicinal liquor made by monks and alchemists across Europe. The modern gin was modified in Flanders and the Netherlands to provide aqua vita from distillates of grapes and grains, becoming an object of commerce in the spirits industry. Gin became popular in England after the introduction of jenever, a Dutch and Belgian liquor</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
